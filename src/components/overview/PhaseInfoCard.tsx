@@ -8,7 +8,7 @@ interface PhaseInfoCardProps {
 
 export const PhaseInfoCard: React.FC<PhaseInfoCardProps> = ({ onViewTips, onLogPeriod }) => {
   return (
-    <div className="w-full min-w-0 lg:min-h-[213px] bg-white rounded-[28px] pl-[clamp(1rem,1.75vw,1.5625rem)] pr-3 py-5 lg:py-[9px] border border-[#F1ECF2] shadow-[0px_10px_30px_-14px_rgba(120,80,160,0.18)] flex flex-col-reverse sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 overflow-hidden">
+    <div className="w-full min-w-0 lg:min-h-[213px] bg-[url('/images/period-banner-bg.webp')] bg-cover bg-[position:right_center] bg-no-repeat rounded-[28px] pl-[clamp(1rem,1.75vw,1.5625rem)] pr-3 py-5 lg:py-[9px] border border-white/70 shadow-[0px_10px_30px_-14px_rgba(180,80,200,0.35)] flex flex-col-reverse sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 overflow-hidden">
       <div className="min-w-0 max-w-[520px] pr-1">
         <h2 className="text-ov-card-title font-bold text-[#17152B] leading-tight">
           You&apos;re in your ovulation phase
@@ -30,7 +30,7 @@ export const PhaseInfoCard: React.FC<PhaseInfoCardProps> = ({ onViewTips, onLogP
             type="button"
             onClick={onLogPeriod}
             aria-haspopup="dialog"
-            className="touch-target h-10 px-5 bg-[#FFE5F2] hover:bg-[#FDD5EA] text-[#EE4D9B] text-[14px] font-medium rounded-full transition active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-400 focus-visible:ring-offset-2"
+            className="touch-target h-10 px-5 bg-white/70 hover:bg-white text-[#EE4D9B] text-[14px] font-medium rounded-full transition active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-400 focus-visible:ring-offset-2"
           >
             Log period
           </button>
@@ -42,7 +42,7 @@ export const PhaseInfoCard: React.FC<PhaseInfoCardProps> = ({ onViewTips, onLogP
         alt="Woman meditating cross-legged, smiling calmly"
         width={352}
         height={385}
-        className="w-[clamp(7rem,12.25vw,11rem)] h-auto object-contain flex-shrink-0 self-center sm:self-auto"
+        className="mix-blend-multiply w-[clamp(7rem,12.25vw,11rem)] h-auto object-contain flex-shrink-0 self-center sm:self-auto"
       />
     </div>
   );

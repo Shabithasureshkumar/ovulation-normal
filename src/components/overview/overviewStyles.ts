@@ -1,6 +1,6 @@
 /** Soft white panel used for every section inside the ovulation overview container. */
 export const insetCard =
-  'min-w-0 bg-white rounded-[24px] shadow-[0px_6px_18px_-10px_rgba(236,72,153,0.16)]';
+  'min-w-0 bg-white rounded-[24px] border-2 border-[#FBE6F1] shadow-[0px_6px_18px_-10px_rgba(236,72,153,0.16)]';
 
 /** Icon colour pairs (badge background + glyph) from the design. */
 export const ICON_TONES = {
